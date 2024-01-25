@@ -22,17 +22,3 @@ This Python script provides a simple implementation of a Transport Management Sy
 - **Route Class:** Represents a route between source and destination with a given distance.
 - **TransportManagementSystem Class:** Manages the fleet of vehicles and routes, providing basic functionalities.
 
-## Prerequisites
-
-Ensure you have Python installed. 
-
-
-## Usage
-
-Clone the repository:
-
-git clone https://github.com/your-username/transport-management-system.git
-Navigate to the project directory:
-cd transport-management-system
-Run the script:
-python transport_management_system.py
