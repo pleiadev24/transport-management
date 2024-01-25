@@ -24,7 +24,15 @@ This Python script provides a simple implementation of a Transport Management Sy
 
 ## Prerequisites
 
-Ensure you have Python installed. You can install the required library using:
+Ensure you have Python installed. 
 
-```bash
-pip install networkx
+
+## Usage
+
+Clone the repository:
+
+git clone https://github.com/your-username/transport-management-system.git
+Navigate to the project directory:
+cd transport-management-system
+Run the script:
+python transport_management_system.py
