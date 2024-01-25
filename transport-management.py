@@ -1,8 +1,10 @@
+#add fiel efficiency
 class Vehicle:
-    def __init__(self, vehicle_id, capacity):
+    def __init__(self, vehicle_id, capacity, fuel_efficiency):
         self.vehicle_id = vehicle_id
         self.capacity = capacity
         self.current_cargo = []
+        self.fuel_efficiency = fuel_efficiency
 
     def load_cargo(self, cargo):
         if len(self.current_cargo) + len(cargo) <= self.capacity:
@@ -10,9 +12,12 @@ class Vehicle:
             print(f"Cargo loaded into {self.vehicle_id}: {cargo}")
         else:
             print(f"Error: Cargo capacity exceeded for {self.vehicle_id}")
+#added fuel effiency 
+    def calculate_fuel_consumption(self, distance):
+        return distance / self.fuel_efficiency
 
     def display_status(self):
-        print(f"{self.vehicle_id} - Current Cargo: {self.current_cargo}")
+        print(f"{self.vehicle_id} - Capacity: {self.capacity}, Current Cargo: {self.current_cargo}")
 
 
 class Route:
