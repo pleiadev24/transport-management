@@ -25,3 +25,13 @@ This Python script provides a simple implementation of a Transport Management Sy
 Vehicle class has a fuel_efficiency attribute and a method calculate_fuel_consumption to model fuel efficiency.
 The emission_standard attribute represents the emission standard compliance of the vehicle.
 The calculate_emission method estimates emissions based on distance and emission standards.
+
+## Cardinality
+
+Vehicle and TransportManagementSystem: 1:many.
+One TransportManagementSystem can manage multiple vehicles.
+Route and TransportManagementSystem: 1:many.
+One TransportManagementSystem can manage multiple routes 
+Vehicle and Route:
+There is no direct relationship between Vehicle and Route in the provided code.
+
