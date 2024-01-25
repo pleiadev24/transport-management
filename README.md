@@ -23,3 +23,6 @@ This Python script provides a simple implementation of a Transport Management Sy
 - **TransportManagementSystem Class:** Manages the fleet of vehicles and routes, providing basic functionalities.
 
 ![Output](output.png)
+
+Improved the business and data modeling aspects:
+Vehicle class has a fuel_efficiency attribute and a method calculate_fuel_consumption to model fuel efficiency.
