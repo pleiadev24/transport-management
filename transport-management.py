@@ -1,8 +1,11 @@
+#add fiel efficiency and emission
 class Vehicle:
-    def __init__(self, vehicle_id, capacity):
+    def __init__(self, vehicle_id, capacity, fuel_efficiency, emission_standard):
         self.vehicle_id = vehicle_id
         self.capacity = capacity
         self.current_cargo = []
+        self.fuel_efficiency = fuel_efficiency
+        self.emission_standard = emission_standard  # Emission standard (e.g., Euro 6)
 
     def load_cargo(self, cargo):
         if len(self.current_cargo) + len(cargo) <= self.capacity:
@@ -11,8 +14,15 @@ class Vehicle:
         else:
             print(f"Error: Cargo capacity exceeded for {self.vehicle_id}")
 
+    def calculate_fuel_consumption(self, distance):
+        return distance / self.fuel_efficiency
+
+    def calculate_emission(self, distance):
+        emission_factor = 2.5 if self.emission_standard == "Euro 6" else 3.5
+        return distance * emission_factor
+
     def display_status(self):
-        print(f"{self.vehicle_id} - Current Cargo: {self.current_cargo}")
+        print(f"{self.vehicle_id} - Capacity: {self.capacity}, Current Cargo: {self.current_cargo}")
 
 
 class Route:
