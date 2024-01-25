@@ -7,10 +7,7 @@ Implementation of a Transport Management System in Python, focusing on vehicles,
 - [Introduction](#introduction)
 - [Features](#features)
 - [Prerequisites](#prerequisites)
-- [Usage](#usage)
-- [Classes](#classes)
-- [Example](#example)
-- [License](#license)
+
 
 ## Introduction
 
