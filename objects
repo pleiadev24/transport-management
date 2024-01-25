@@ -1,0 +1,20 @@
+transport_system = TransportManagementSystem()
+
+# Add vehicles
+transport_system.add_vehicle("V1", capacity=15)
+transport_system.add_vehicle("V2", capacity=20)
+
+# Add routes
+transport_system.add_route("Warehouse", "Destination1", distance=10)
+transport_system.add_route("Warehouse", "Destination2", distance=15)
+
+# Display fleet status and route information
+transport_system.display_fleet_status()
+transport_system.display_routes_info()
+
+# Load cargo into vehicles
+transport_system.vehicles[0].load_cargo(["Item1", "Item2"])
+transport_system.vehicles[1].load_cargo(["Item3", "Item4", "Item5"])
+
+# Display updated fleet status
+transport_system.display_fleet_status()
