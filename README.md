@@ -28,12 +28,9 @@ The calculate_emission method estimates emissions based on distance and emission
 
 ## Cardinality
 
-Vehicle and TransportManagementSystem: 1:many.
-One TransportManagementSystem can manage multiple vehicles.
-Route and TransportManagementSystem: 1:many.
-One TransportManagementSystem can manage multiple routes 
-Vehicle and Route:
-There is no direct relationship between Vehicle and Route in the provided code.
+- Vehicle and TransportManagementSystem: 1:many.One TransportManagementSystem can manage multiple vehicles.
+- Route and TransportManagementSystem: 1:many.One TransportManagementSystem can manage multiple routes 
+- Vehicle and Route:There is no direct relationship between Vehicle and Route.
 
 ## Class Diagram
 
